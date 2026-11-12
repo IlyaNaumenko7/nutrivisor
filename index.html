@@ -175,11 +175,10 @@
 
 <script>
     const paymentLinks = {
-        'Экспресс-консультация': 'https://yookassa.ru/my/i/avXYZ23F9H0t/l',
-        'Разбор анализов': 'https://yookassa.ru/my/i/avXYvKeWZfnT/l',
-        'Полное сопровождение': 'https://yookassa.ru/my/i/avXZA95I98CG/l'
-    };
-
+    'Экспресс-консультация': 'https://yookassa.ru/my/i/avXYZ23F9H0t/l?success_url=https://nutrivisor.ru/thank-you.html',
+    'Разбор анализов': 'https://yookassa.ru/my/i/avXYvKeWZfnT/l?success_url=https://nutrivisor.ru/thank-you.html',
+    'Полное сопровождение': 'https://yookassa.ru/my/i/avXZA95I98CG/l?success_url=https://nutrivisor.ru/thank-you.html'
+};
     function openPayment(serviceName, price) {
         document.getElementById('modalTitle').innerText = serviceName;
         document.getElementById('modalPrice').innerText = price.toLocaleString('ru-RU') + ' ₽';
