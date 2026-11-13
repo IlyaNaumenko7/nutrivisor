@@ -150,11 +150,22 @@
     </div>
 </section>
 
+<!-- НОВЫЙ БЛОК ДЛЯ ТЕХ, КТО УЖЕ ОПЛАТИЛ -->
+<section id="already-paid" style="background-color: var(--accent); padding: 40px 20px; text-align: center; border-radius: 24px; margin: 40px auto; max-width: 1000px;">
+    <div class="container">
+        <h2 style="margin-bottom: 16px; color: var(--primary);">Уже оплатили услугу?</h2>
+        <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Отлично! Заполните анкету и выберите удобное время для связи — это займёт всего 5–7 минут.
+        </p>
+        <a href="https://forms.yandex.ru/u/6af5bd48974ab2546ae6bf7e" class="btn" target="_blank" style="margin-right: 12px;">Заполнить анкету</a>
+        <a href="https://nutrivisor.ru/thank-you.html" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Или перейти к полному руководству</a>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <p>© 2026 NUTRIVISOR · Науменко Яна Константиновна. Все права защищены.</p>
         <p style="margin-top: 8px;">Связь: <a href="https://t.me/YanaNaumenko" target="_blank">Telegram</a> | <a href="mailto:naumenko.y.k@gmail.com">Почта</a></p>
-        <!-- ОБНОВЛЕННЫЙ БЛОК ССЫЛОК НА ДОКУМЕНТЫ -->
         <div class="legal-links">
             <a href="privacy.html">Политика конфиденциальности</a>
             <a href="offer.html">Договор оферты</a>
@@ -175,10 +186,10 @@
 
 <script>
     const paymentLinks = {
-    'Экспресс-консультация': 'https://yookassa.ru/my/i/avYIzTFU0iHE/l',
-    'Разбор анализов': 'https://yookassa.ru/my/i/avYIr42sPm7k/l',
-    'Полное сопровождение': 'https://yookassa.ru/my/i/avYIUnIAU7ru/l'
-};
+        'Экспресс-консультация': 'https://yookassa.ru/my/i/avYIzTFU0iHE/l',
+        'Разбор анализов': 'https://yookassa.ru/my/i/avYIr42sPm7k/l',
+        'Полное сопровождение': 'https://yookassa.ru/my/i/avYIUnIAU7ru/l'
+    };
     
     function openPayment(serviceName, price) {
         document.getElementById('modalTitle').innerText = serviceName;
@@ -198,6 +209,9 @@
         }
     }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
